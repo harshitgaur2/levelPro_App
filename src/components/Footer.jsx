@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-left">
-        <img src = {levelpro_white} ></img>
+        <img src = {levelpro_white} alt = "White Logo" ></img>
         <h2>helps you to supercharge your career fast.</h2>
         <button className="trial-button">Register a Free Consultation Now</button>
       </div>

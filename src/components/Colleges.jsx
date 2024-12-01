@@ -16,7 +16,7 @@ const CustomPrevArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={`${className} custom-arrow prev-arrow`} onClick={onClick}> 
-    <img src = {left_arrow}></img>
+    <img src = {left_arrow} alt = "left_arrow"></img>
     </div>
   );
 };
@@ -25,7 +25,7 @@ const CustomNextArrow = (props) => {
   const { className, onClick } = props;
   return (
     <div className={`${className} custom-arrow next-arrow`} onClick={onClick}> 
-    <img src = {right_arrow}></img>
+    <img src = {right_arrow} alt = "right_arrow"></img>
     </div>
   );
 };
