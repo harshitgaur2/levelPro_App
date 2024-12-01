@@ -1,0 +1,140 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #0c00f1;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #4a4aff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-links.mobile-open {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #4a4aff;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+  display: flex;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #ffbb00;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta-primary,
+.cta-secondary {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-primary {
+  background-color: #ff009d;
+  color: #fff;
+  border: none;
+}
+
+.cta-primary:hover {
+  background-color: #0004d3;
+}
+
+.cta-secondary {
+  background-color: transparent;
+  color: #4a4aff;
+  border: 2px solid #4a4aff;
+}
+
+.cta-secondary:hover {
+  background-color: #4a4aff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .cta {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+}

@@ -1,0 +1,70 @@
+/* General carousel container */
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Carousel title */
+.carousel-container h2 {
+  font-family: "Arial", sans-serif;
+  color: #4c4c6d;
+  margin-bottom: 20px;
+}
+
+/* Individual college card */
+.college-card {
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.college-card:hover {
+  transform: scale(1.05);
+}
+
+.college-logo {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.college-name {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Custom arrow styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #4c4c6d;
+  transition: color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  color: #000000;
+}
+
+.prev-arrow {
+  left: -30px;
+}
+
+.next-arrow {
+  right: -30px;
+}
+
+/* Adjust arrow positions for mobile screens */
+@media (max-width: 600px) {
+  .prev-arrow {
+    left: -10px;
+  }
+
+  .next-arrow {
+    right: -10px;
+  }
+}

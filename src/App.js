@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Stats from "./components/Stats";
+import Services from "./components/Services";
+import Colleges from "./components/Colleges";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import "./index.css";
+import HomeBanner from "./components/HomeBanner";
+import NavBar from "./components/Navbar";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import WhatsappButton from "./components/WhatsappButton";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavBar />
+      <HomeBanner />
+      <WhatsappButton />
+      <Stats />
+      <Services />
+      <Colleges />
+      <FAQ />
+      <Footer />
     </div>
   );
 }
